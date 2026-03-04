@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechWorld GR - Αρχική</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">⚡ TechWorld GR</a>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Αρχική</a></li>
+      <li class="dropdown">
+        <a href="news.html">Νέα ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="news-ai.html">Τεχνητή Νοημοσύνη</a></li>
+          <li><a href="news-mobile.html">Κινητά &amp; Gadgets</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="products.html">Προϊόντα ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="products-laptops.html">Laptops</a></li>
+          <li><a href="products-smartphones.html">Smartphones</a></li>
+          <li><a href="products-accessories.html">Αξεσουάρ</a></li>
+        </ul>
+      </li>
+      <li><a href="tutorials.html">Οδηγοί</a></li>
+      <li><a href="map.html">Χάρτης</a></li>
+      <li><a href="videos.html">Βίντεο</a></li>
+      <li><a href="review.html">Αξιολόγηση</a></li>
+      <li><a href="contact.html">Επικοινωνία</a></li>
+      <li><a href="about.html">Σχετικά</a></li>
+    </ul>
+    <button class="dark-toggle" id="darkToggle" title="Εναλλαγή σκοτεινής/φωτεινής λειτουργίας">🌙</button>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Καλώς ήρθατε στο <span>TechWorld GR</span></h1>
+    <p>Ο κορυφαίος ελληνικός ιστότοπος τεχνολογίας. Νέα, κριτικές, οδηγοί και τα καλύτερα προϊόντα σε ένα μέρος.</p>
+    <a href="news.html" class="hero-btn">Ανακαλύψτε τα Νέα</a>
+  </section>
+
+  <!-- Carousel -->
+  <section class="carousel-wrapper">
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="slide">
+          <img src="https://picsum.photos/1200/500?random=1" alt="AI Revolution">
+          <div class="slide-caption">
+            <h3>AI Revolution</h3>
+            <p>Η επανάσταση της τεχνητής νοημοσύνης αλλάζει τον κόσμο μας</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/1200/500?random=2" alt="Smartphones 2025">
+          <div class="slide-caption">
+            <h3>Smartphones 2025</h3>
+            <p>Τα πιο εντυπωσιακά smartphones που κυκλοφόρησαν φέτος</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/1200/500?random=3" alt="Laptops Pro">
+          <div class="slide-caption">
+            <h3>Laptops Pro</h3>
+            <p>Επαγγελματικά laptops για κάθε ανάγκη και προϋπολογισμό</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/1200/500?random=4" alt="Gadgets & Tech">
+          <div class="slide-caption">
+            <h3>Gadgets &amp; Tech</h3>
+            <p>Τα πιο cool gadgets και αξεσουάρ για τεχνόφιλους</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn prev" aria-label="Προηγούμενο">&#8249;</button>
+      <button class="carousel-btn next" aria-label="Επόμενο">&#8250;</button>
+      <div class="carousel-indicators">
+        <button class="indicator active" aria-label="Slide 1"></button>
+        <button class="indicator" aria-label="Slide 2"></button>
+        <button class="indicator" aria-label="Slide 3"></button>
+        <button class="indicator" aria-label="Slide 4"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="container">
+    <h2 class="section-title">Τι θα βρείτε εδώ</h2>
+    <p class="section-subtitle">Όλα τα εργαλεία που χρειάζεστε για να μείνετε ενημερωμένοι</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📰</span>
+        <h3>Νέα Τεχνολογίας</h3>
+        <p>Τελευταία νέα από τον κόσμο της τεχνολογίας, της τεχνητής νοημοσύνης και των κινητών.</p>
+        <a href="news.html" class="btn">Διαβάστε Νέα</a>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🛒</span>
+        <h3>Προϊόντα</h3>
+        <p>Εκτενείς κριτικές και συγκρίσεις για laptops, smartphones και αξεσουάρ.</p>
+        <a href="products.html" class="btn">Δείτε Προϊόντα</a>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📚</span>
+        <h3>Οδηγοί &amp; Tutorials</h3>
+        <p>Βήμα-βήμα οδηγοί για να αξιοποιήσετε στο έπακρο την τεχνολογία σας.</p>
+        <a href="tutorials.html" class="btn">Μάθετε Περισσότερα</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News -->
+  <section class="container" style="padding-top:0">
+    <h2 class="section-title">Τελευταία Νέα</h2>
+    <p class="section-subtitle">Μείνετε ενημερωμένοι με τις πιο πρόσφατες εξελίξεις</p>
+    <div class="news-grid">
+      <article class="news-card">
+        <img src="https://picsum.photos/600/300?random=10" alt="AI News">
+        <div class="news-card-body">
+          <span class="badge">Τεχνητή Νοημοσύνη</span>
+          <span class="date">15 Ιανουαρίου 2025</span>
+          <h3>Νέο μοντέλο AI ξεπερνά ανθρώπινες επιδόσεις σε τεστ αντίληψης</h3>
+          <p>Ερευνητές ανακοίνωσαν ένα επαναστατικό μοντέλο τεχνητής νοημοσύνης που αποδεικνύει εκπληκτικές ικανότητες αντίληψης και επίλυσης προβλημάτων.</p>
+          <a href="news-ai.html" class="read-more">Διαβάστε περισσότερα →</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://picsum.photos/600/300?random=11" alt="Mobile News">
+        <div class="news-card-body">
+          <span class="badge">Κινητά</span>
+          <span class="date">14 Ιανουαρίου 2025</span>
+          <h3>Το πιο λεπτό smartphone του κόσμου παρουσιάζεται στην CES 2025</h3>
+          <p>Μια κορυφαία εταιρεία τεχνολογίας παρουσίασε το λεπτότερο smartphone που έχει κατασκευαστεί ποτέ, με πάχος μόλις 5.1mm και εκπληκτικές δυνατότητες.</p>
+          <a href="news-mobile.html" class="read-more">Διαβάστε περισσότερα →</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://picsum.photos/600/300?random=12" alt="Tech News">
+        <div class="news-card-body">
+          <span class="badge">Τεχνολογία</span>
+          <span class="date">13 Ιανουαρίου 2025</span>
+          <h3>Κβαντικοί υπολογιστές: Η επόμενη τεχνολογική επανάσταση είναι εδώ</h3>
+          <p>Οι κβαντικοί υπολογιστές γίνονται πραγματικότητα και υπόσχονται να αλλάξουν τον τρόπο που επεξεργαζόμαστε δεδομένα σε ολόκληρες βιομηχανίες.</p>
+          <a href="news.html" class="read-more">Διαβάστε περισσότερα →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>⚡ TechWorld GR</h3>
+      <p>Ο κορυφαίος ελληνικός ιστότοπος τεχνολογίας.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Σύνδεσμοι</h4>
+      <ul>
+        <li><a href="index.html">Αρχική</a></li>
+        <li><a href="news.html">Νέα</a></li>
+        <li><a href="products.html">Προϊόντα</a></li>
+        <li><a href="about.html">Σχετικά</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Επικοινωνία</h4>
+      <p>📧 info@techworldgr.gr</p>
+      <p>📞 +30 210 1234567</p>
+      <p>📍 Αθήνα, Ελλάδα</p>
+    </div>
+    <div class="footer-col">
+      <h4>Ακολουθήστε μας</h4>
+      <div class="social-links">
+        <a href="#" title="Facebook">📘 Facebook</a>
+        <a href="#" title="Twitter">🐦 Twitter</a>
+        <a href="#" title="Instagram">📷 Instagram</a>
+        <a href="#" title="YouTube">▶️ YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 TechWorld GR. Όλα τα δικαιώματα διατηρούνται.</p>
+  </div>
+</footer>
+<button class="scroll-top" id="scrollTop" title="Πάνω">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

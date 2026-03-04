@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechWorld GR - Αξιολόγηση</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">⚡ TechWorld GR</a>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Αρχική</a></li>
+      <li class="dropdown">
+        <a href="news.html">Νέα ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="news-ai.html">Τεχνητή Νοημοσύνη</a></li>
+          <li><a href="news-mobile.html">Κινητά &amp; Gadgets</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="products.html">Προϊόντα ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="products-laptops.html">Laptops</a></li>
+          <li><a href="products-smartphones.html">Smartphones</a></li>
+          <li><a href="products-accessories.html">Αξεσουάρ</a></li>
+        </ul>
+      </li>
+      <li><a href="tutorials.html">Οδηγοί</a></li>
+      <li><a href="map.html">Χάρτης</a></li>
+      <li><a href="videos.html">Βίντεο</a></li>
+      <li><a href="review.html">Αξιολόγηση</a></li>
+      <li><a href="contact.html">Επικοινωνία</a></li>
+      <li><a href="about.html">Σχετικά</a></li>
+    </ul>
+    <button class="dark-toggle" id="darkToggle" title="Εναλλαγή σκοτεινής/φωτεινής λειτουργίας">🌙</button>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="page-header">
+    <h1>⭐ Αξιολόγηση</h1>
+    <p>Πείτε μας τη γνώμη σας για τον ιστότοπό μας και το περιεχόμενό μας</p>
+  </div>
+
+  <div class="container">
+    <div class="contact-section">
+
+      <div class="mission-box" style="margin-bottom: 2rem;">
+        <p>💬 Η γνώμη σας μετράει! Βοηθήστε μας να βελτιωθούμε αφήνοντας την αξιολόγησή σας. Διαβάζουμε κάθε σχόλιο και προσπαθούμε να ανταποκριθούμε σε κάθε πρόταση.</p>
+      </div>
+
+      <h2 class="section-title">Αφήστε Αξιολόγηση</h2>
+      <p class="section-subtitle">Πόσο ικανοποιημένοι είστε από το TechWorld GR;</p>
+
+      <form id="reviewForm" novalidate>
+        <div class="form-group">
+          <label for="reviewName">Ονοματεπώνυμο *</label>
+          <input type="text" id="reviewName" name="name" placeholder="π.χ. Μαρία Αντωνίου" required>
+        </div>
+        <div class="form-group">
+          <label for="reviewEmail">Email *</label>
+          <input type="email" id="reviewEmail" name="email" placeholder="π.χ. maria@email.gr" required>
+        </div>
+        <div class="form-group">
+          <label>Βαθμολογία *</label>
+          <div class="star-rating" id="starRating" role="group" aria-label="Αξιολόγηση">
+            <span class="star" data-value="1" title="1 αστέρι" role="button" tabindex="0" aria-label="1 αστέρι">★</span>
+            <span class="star" data-value="2" title="2 αστέρια" role="button" tabindex="0" aria-label="2 αστέρια">★</span>
+            <span class="star" data-value="3" title="3 αστέρια" role="button" tabindex="0" aria-label="3 αστέρια">★</span>
+            <span class="star" data-value="4" title="4 αστέρια" role="button" tabindex="0" aria-label="4 αστέρια">★</span>
+            <span class="star" data-value="5" title="5 αστέρια" role="button" tabindex="0" aria-label="5 αστέρια">★</span>
+          </div>
+          <input type="hidden" id="ratingValue" name="rating" value="0">
+          <small style="color: var(--muted); font-size: 0.82rem;">Κάντε κλικ σε ένα αστέρι για να ορίσετε τη βαθμολογία σας</small>
+        </div>
+        <div class="form-group">
+          <label for="reviewComment">Σχόλιο *</label>
+          <textarea id="reviewComment" name="comment" placeholder="Πείτε μας τη γνώμη σας για το TechWorld GR..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">⭐ Υποβολή Αξιολόγησης</button>
+        <div id="reviewMsg" class="form-msg"></div>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>⚡ TechWorld GR</h3>
+      <p>Ο κορυφαίος ελληνικός ιστότοπος τεχνολογίας.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Σύνδεσμοι</h4>
+      <ul>
+        <li><a href="index.html">Αρχική</a></li>
+        <li><a href="news.html">Νέα</a></li>
+        <li><a href="products.html">Προϊόντα</a></li>
+        <li><a href="about.html">Σχετικά</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Επικοινωνία</h4>
+      <p>📧 info@techworldgr.gr</p>
+      <p>📞 +30 210 1234567</p>
+      <p>📍 Αθήνα, Ελλάδα</p>
+    </div>
+    <div class="footer-col">
+      <h4>Ακολουθήστε μας</h4>
+      <div class="social-links">
+        <a href="#" title="Facebook">📘 Facebook</a>
+        <a href="#" title="Twitter">🐦 Twitter</a>
+        <a href="#" title="Instagram">📷 Instagram</a>
+        <a href="#" title="YouTube">▶️ YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 TechWorld GR. Όλα τα δικαιώματα διατηρούνται.</p>
+  </div>
+</footer>
+<button class="scroll-top" id="scrollTop" title="Πάνω">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
